@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-/*
- * main - main Block
- * Return: Always (0)
+/**
+ * main - main block
+ * Return: (0)
  */
 
 int main(void)
