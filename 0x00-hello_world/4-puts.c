@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /*
- * main - A program that prints some given input followed by a new line.
+ * main - main Block
  * Return: Always (0)
  */
 
