@@ -14,7 +14,7 @@ int main(void)
 		putchar(n + 48);
 		n++;
 	}
-	
+
 	putchar('\n');
 	return (0);
 }
