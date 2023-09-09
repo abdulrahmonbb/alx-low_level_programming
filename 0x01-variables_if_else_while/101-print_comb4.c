@@ -19,20 +19,23 @@ int main(void)
 			k = 0;
 			while (k < 10)
 			{
-				putchar('0' + i);
-				putchar('0' + j);
-				putchar('0' + k);
-
-				if (i < 7)
+				if (k != j && j != i && i < j && j < k)
 				{
-					putchar(',');
-					putchar(' ');
+					putchar('0' + i);
+					putchar('0' + j);
+					putchar('0' + k);
+
+					if (c + d + e != 9 + 8 + 7)
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 				k++;
 			}
 			j++;
 		}
-		i++;
+		i++
 	}
 
 	putchar('\n');
