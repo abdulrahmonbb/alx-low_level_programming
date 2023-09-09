@@ -7,15 +7,19 @@
 
 int main(void)
 {
-	int x;
-
-	for (x = 0; x <= 9; x++)
+	int c = 0;
+	
+	while (c < 10)
 	{
-			putchar('0' + x);
+		putchar(48 + c);
+		if (c != 9)
+		{
 			putchar(',');
 			putchar(' ');
+		}
+		c++;
 	}
-
+	`
 	putchar('\n');
 	return (0);
 }
