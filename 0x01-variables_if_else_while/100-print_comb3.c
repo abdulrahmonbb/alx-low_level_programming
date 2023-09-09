@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include <stdio.h>
 
 /**
@@ -7,17 +8,30 @@
 
 int main(void)
 {
-	int c = 0;
+	int c;
+	int d = 0;
 
-	while (c < 10)
+	while (d < 0)
 	{
-		putchar(48 + c);
-		putchar((48 + c) + 1);
-		putchar(',');
-		putchar(' ');
-		c++;
-	}
+		c = 0;
+		while (c < 10)
+		{
+			if (d != c && d < c)
+			{
+				putchar('0' + d);
+				putchar('0' + c);
 
+				if (c + d != 17)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+
+			c++;
+		}
+		d++;
+	}
 	putchar('\n');
 	return (0);
 }
