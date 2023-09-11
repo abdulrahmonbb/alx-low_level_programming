@@ -2,7 +2,8 @@
 
 /**
  * main - Main block
- * Description: Write a program that prints all possible combinations of two two-digit numbers.
+ * Description: Write a program that prints all possible combinations of two
+ * two-digit numbers.
  * Return: (0)
  */
 
@@ -20,13 +21,14 @@ int main(void)
 			putchar('0' + (num2 / 10));
 			putchar('0' + (num2 % 10));
 
-			if (num1 != 98 && num2 != 99)
-			{
-				putchar(',');
-				putchar(' ');
-			}
+			if (num1 == 98 && num2 == 99)
+				continue;
+
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
+
 	return (0);
 }
