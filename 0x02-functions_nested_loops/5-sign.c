@@ -2,6 +2,7 @@
 
 /**
  * print_sign - prints the sign of a number
+ * @n: number to be checked
  * Return: Always 0
  */
 
