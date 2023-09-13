@@ -10,10 +10,10 @@ void times_table(void)
 	int i, j, product;
 
 	i = 0;
-	while (i < 10)
+	while (i <= 9)
 	{
 		j = 0;
-		while (j < 10)
+		while (j <= 9)
 		{
 			product = i * j;
 
@@ -24,7 +24,7 @@ void times_table(void)
 			else if (product < 10)
 			{
 				_putchar(' ');
-				_putchar(',');
+				_putchar(product + '0');
 			}
 			else
 			{
