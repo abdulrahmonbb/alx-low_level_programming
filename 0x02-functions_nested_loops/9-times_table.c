@@ -26,17 +26,18 @@ void times_table(void)
 			{
 				_putchar(product + '0');
 			}
-			
+
 			if (j != 9)
 			{
 				_putchar(',');
+				_putchar(' ');
 				_putchar(' ');
 			}
 
 			j++;
 		}
 		_putchar('\n');
-		
+
 		i++;
 	}
 }
