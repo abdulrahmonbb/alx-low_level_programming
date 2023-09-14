@@ -18,7 +18,7 @@ int main(void)
 		a = b;
 		b = next;
 
-		if (next < 4000000 && (next / 2) == 0)
+		if (next < 4000000 && (next % 2) == 0)
 		{
 			sum += next;
 		}
