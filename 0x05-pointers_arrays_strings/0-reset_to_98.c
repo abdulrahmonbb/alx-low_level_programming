@@ -3,8 +3,8 @@
 /**
  * reset_to_98 -  takes a pointer to an int and updates to 98 by dereferencing.
  *
- *@n: pointer to an integer
-
+ * @n: pointer parameter
+ *
  * Return: void
  */
 void reset_to_98(int *n)
