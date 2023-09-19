@@ -3,6 +3,8 @@
 /**
  * print_array - prints n elements of an array of integers
  *
+ * @a: array that is pointed to
+ *
  * @n: number of array elements to be printed
  *
  * Return: void
