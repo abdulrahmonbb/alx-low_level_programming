@@ -11,7 +11,7 @@ char *_strncpy(char *dest, char *src, int n)
 {
 	char *org = dest;
 
-	while (*str != '\0' && n > 0)
+	while (*src != '\0' && n > 0)
 	{
 		*dest++ = *src++;
 		n--;
