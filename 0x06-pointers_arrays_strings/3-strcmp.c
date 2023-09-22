@@ -8,22 +8,14 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	char first[], second[];
-
-	while (*s1 != '\0')
+	int i;
+	
+	for (i = 0; s1[i] != '\0' || s2[i] != '\0'; i++)
 	{
-		first = *s1++;
+		if (s1[i] != s2[i])
+		{
+			return (s1[i] != s2[i]);
+		}
 	}
-	while (*s2 != '\0')
-	{
-		second = *s2++;
-	}
-
-	if (first == second)
-	{
-		return (0);
-	}
-	else
-		return (-1);
-}
-		
+	return (0);
+}	
