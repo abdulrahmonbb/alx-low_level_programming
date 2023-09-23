@@ -13,10 +13,10 @@ char *cap_string(char *str)
 	{
 		str[0] = str[0] - 32;
 	}
-	
+
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		switch(str[i])
+		switch (str[i])
 		{
 			case ',':
 			case ';':
@@ -39,4 +39,3 @@ char *cap_string(char *str)
 	}
 	return (str);
 }
-		
