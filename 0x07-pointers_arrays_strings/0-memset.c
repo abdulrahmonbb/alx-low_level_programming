@@ -4,6 +4,7 @@
  * _memset - fills the first n bytes of the memory area pointed to by s with
  * the constant byte b.
  * @s: string
+ * @n: number of bytes to be filled
  * @b: character
  *
  * Return: a pointer to the memory area
