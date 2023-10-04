@@ -10,20 +10,23 @@
  */
 char *_strdup(char *str)
 {
-	int length, i;
-	char *s;
+	int length;
+	char *duplicate;
 
-	length = strlen(str);
-	s = (char *)malloc(length * sizeof(char));
-	for (i = 0; i < length; i++)
-	{
-		s[i] = str[i];
-	}
-	
 	if (str == NULL)
 	{
 		return (NULL);
 	}
-	else
-		return (s);
+
+	length = strlen(str);
+	duplicate = (char *)malloc((length + 1) * sizeof(char));
+
+	if (duplicate == NULL)
+	{
+		return (NULL);
+	}
+
+	strcpy(duplicate, str);
+	return (duplicate);
 }
+
