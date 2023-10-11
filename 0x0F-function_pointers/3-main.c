@@ -2,6 +2,8 @@
 
 /**
  * main - Check the code
+ * @argc: argument count
+ * @argv: argument vector
  *
  * Return: Always 0
  */
@@ -27,7 +29,7 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 	result = p(n1, n2);
-	
+
 	printf("%d\n", result);
 	return (0);
 }
