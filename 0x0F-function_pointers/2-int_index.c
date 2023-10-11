@@ -2,6 +2,7 @@
 
 /**
  * int_index - searches for an integer
+ * @array: pointer to array
  * @size: size of elements in array
  * @cmp: pointer to function to be used to compare values
  *
