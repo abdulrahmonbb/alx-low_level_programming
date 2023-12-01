@@ -16,16 +16,16 @@ int create_file(const char *filename, char *text_content)
 
 	if (text_content == NULL)
 	{
-		close (fd);
+		close(fd);
 		return (-1);
 	}
 	len = strlen(text_content);
 	write_count = write(fd, text_content, len);
 	if (write_count == -1 || (int) write_count != len)
 	{
-		close (fd);
+		close(fd);
 		return (-1);
 	}
-	close (fd);
+	close(fd);
 	return (1);
 }
