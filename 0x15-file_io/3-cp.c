@@ -29,11 +29,16 @@ int main(int argc, char *argv[])
 	while((read_size = read(src_fd, buffer, BUF_SIZE)) > 0)
 	{
 		if (write(dest_fd, buffer, read_size) != read_size)
-			dprintf(2, "Error: Can't write to file %s\n", argv[1]), exit(99);
+		{
+			dprintf(2, "Error: Can't write to file %s\n", argv[1]);
+	       		exit(99);
+		}
 	}
 	if (read_size < 0)
-		dprintf(2, "Error: Can't read from file %s\n", argv[2]), exit(98);
-
+	{
+		dprintf(2, "Error: Can't read from file %s\n", argv[2]);
+		exit(98);
+	}
 	if (close(src_fd) == -1)
 	{
 		dprintf(2, "Error: Can't close file %s\n", argv[1]);
