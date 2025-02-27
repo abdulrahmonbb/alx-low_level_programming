@@ -1,37 +1,28 @@
-#include <stdlib.h>
 #include <stdio.h>
 
 /**
- * main - main block
- * Return: (0)
+ * main - prints all possible combinations of three digits numbers
+ *
+ * Return: Always 0
  */
+ int main(void)
+ {
+    int i;
+    int j;
 
-int main(void)
-{
-	int c;
-	int d = 0;
-
-	while (d < 10)
-	{
-		c = 0;
-		while (c < 10)
-		{
-			if (d != c && d < c)
-			{
-				putchar('0' + d);
-				putchar('0' + c);
-
-				if (c + d != 17)
-				{
-					putchar(',');
-					putchar(' ');
-				}
-			}
-
-			c++;
-		}
-		d++;
-	}
-	putchar('\n');
-	return (0);
+    for( i = 48; i <= 57; i++)
+    {
+        for(j = i + 1; j <= 57; j++)
+        {
+            putchar(i);
+            putchar(j);
+            if(i != 56 || j != 57)
+            {
+                putchar(',');
+                putchar(' ');
+            }
+        }
+    }
+    printf("\n");
+    return (0);
 }
